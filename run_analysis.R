@@ -1,17 +1,5 @@
 setwd("C:/Users/andra/Documents/R/Coursera_Data_Science_Specialization/GettingAndCleaningData/week4/Har_Dataset")
 
-zipfilename <- "ProjectData.zip"
-unzipdirectory <- "UCI HAR Dataset"
-
-if(!file.exists(zipfilename)){
-  datalocation <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"    
-  download.file(url = datalocation, destfile = zipfilename, method = "curl")
-}
-
-if(!file.exists(unzipdirectory)){
-  unzip(zipfilename)
-}
-
 
 #merging the test files together
 
